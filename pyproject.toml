@@ -47,13 +47,35 @@ skip = 'docs/_build,docs/bibliography.bib,*.png,*.gz,*.whl'
 ignore-regex = '^\s*"image\/png":\s.*'
 ignore-words-list = "gost,Nd"
 
+[tool.hatch.build.targets.wheel]
+packages = ["src/template"]
+exclude = [
+    "**/__pycache__",
+    "**/.pytest_cache",
+    "**/.git"
+]
+
 [tool.hatch.build.targets.sdist]
 include = [
-    "src/**/*"
+    "src/**/*",
+    "docs/**/*", 
+    "notebooks/**/*",
+    "README.md",
+    "LICENSE",
+    "CITATION.cff",
+    "pyproject.toml"
+]
+exclude = [
+    "**/__pycache__",
+    "**/.pytest_cache", 
+    "**/.git",
+    "**/.DS_Store",
+    "**/Thumbs.db"
 ]
 
 [tool.hatch.version]
 source = "vcs"
+fallback_version = "0.1.0"
 
 [tool.ruff.lint.pydocstyle]
 convention = "numpy"
