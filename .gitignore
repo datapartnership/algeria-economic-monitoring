@@ -93,5 +93,13 @@ _build/
 
 # setuptools-scm/
 src/*/_version.py
+
+# Data directories
 /data
+data/
+
+# Virtual environment
+.venv/
+
+# R history files
 notebooks/linkedin-trends/.Rhistory
