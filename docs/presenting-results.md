@@ -9,3 +9,11 @@ In the notebook, add brief narratives or observations for each table and figure.
 
 ## Preparing for and Addressing Questions
 Most of our clients are World Bank Task Team Leaders (TTLs) who are typically economists with Master’s or PhD-level expertise. While they may not be familiar with every dataset or method you’ve used, they are well-versed in rigorous statistical analysis and expect us to apply statistically sound methodologies. It’s essential, therefore, to keep this in mind and anticipate the kinds of questions they may ask.
+
+## Accessing Hosted Static HTML Outputs
+
+Some analysis outputs, such as the Nighttime Lights Analysis, are available as standalone HTML files that can be shared directly. These files are hosted in the `_static` folder and are accessible via GitHub Pages:
+
+- **Nighttime Lights Analysis**: [https://datapartnership.github.io/algeria-economic-monitoring/_static/nighttime-lights.html](https://datapartnership.github.io/algeria-economic-monitoring/_static/nighttime-lights.html)
+
+These standalone HTML pages include all interactive visualizations and can be shared with clients as direct links without requiring them to navigate the full documentation site.
