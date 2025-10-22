@@ -97,3 +97,11 @@ notebooks/ookla-analysis/processed_data/*.csv
 notebooks/ookla-analysis/ookle_algeria/
 notebooks/ookla-analysis/worldpop_DZA_100m_2019_2025/
 notebooks/worldpop/
+notebooks/boundaries/
+notebooks/ookle_algeria/
+notebooks/processed_data/
+notebooks/worldpop_DZA_100m_2019_2025/
+notebooks/boundaries/
+notebooks/ookle_algeria/
+notebooks/processed_data/
+notebooks/worldpop_DZA_100m_2019_2025/
