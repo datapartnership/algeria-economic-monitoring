@@ -3,11 +3,11 @@ requires = ["hatchling>=1.21.0", "hatch-vcs>=0.3.0"]
 build-backend = "hatchling.build"
 
 [project]
-name = "template"
-description = "A template Python package from the World Bank Data Lab"
+name = "algeria-economic-monitoring"
+description = "Algeria Economic Monitoring - A data analysis project from the World Bank Data Lab"
 readme = { file = "README.md", content-type = "text/markdown" }
 license = { file = "LICENSE" }
-keywords = ["template", "reproducibility"]
+keywords = ["algeria", "economic-monitoring", "data-analysis", "world-bank"]
 authors = [{ name = "Development Data Group", email = "datalab@worldbank.org" }]
 classifiers = [
 	"Programming Language :: Python :: 3",
@@ -38,22 +38,44 @@ docs = [
 ]
 
 [project.urls]
-"Homepage" = "https://github.com/worldbank/template"
-"Bug Reports" = "https://github.com/worldbank/template/issues"
-"Source" = "https://github.com/worldbank/template"
+"Homepage" = "https://github.com/datapartnership/algeria-economic-monitoring"
+"Bug Reports" = "https://github.com/datapartnership/algeria-economic-monitoring/issues"
+"Source" = "https://github.com/datapartnership/algeria-economic-monitoring"
 
 [tool.codespell]
 skip = 'docs/_build,docs/bibliography.bib,*.png,*.gz,*.whl'
 ignore-regex = '^\s*"image\/png":\s.*'
 ignore-words-list = "gost,Nd"
 
+[tool.hatch.build.targets.wheel]
+packages = ["src/template"]
+exclude = [
+    "**/__pycache__",
+    "**/.pytest_cache",
+    "**/.git"
+]
+
 [tool.hatch.build.targets.sdist]
 include = [
-    "src/**/*"
+    "src/**/*",
+    "docs/**/*", 
+    "notebooks/**/*",
+    "README.md",
+    "LICENSE",
+    "CITATION.cff",
+    "pyproject.toml"
+]
+exclude = [
+    "**/__pycache__",
+    "**/.pytest_cache", 
+    "**/.git",
+    "**/.DS_Store",
+    "**/Thumbs.db"
 ]
 
 [tool.hatch.version]
 source = "vcs"
+fallback_version = "0.1.0"
 
 [tool.ruff.lint.pydocstyle]
 convention = "numpy"
