@@ -94,3 +94,6 @@ _build/
 # setuptools-scm/
 src/*/_version.py
 notebooks/ookla-analysis/processed_data/*.csv
+notebooks/ookla-analysis/ookle_algeria/
+notebooks/ookla-analysis/worldpop_DZA_100m_2019_2025/
+notebooks/worldpop/
