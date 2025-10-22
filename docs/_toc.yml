@@ -2,6 +2,12 @@ format: jb-book
 root: README
 
 parts:
+  - caption: Analytics
+    chapters:
+        file: notebooks/linkedin-trends/README
+        sections:
+          - file: notebooks/linkedin-trends/linkedin-labor-analysis.ipynb
+          - file: notebooks/linkedin-trends/linkedin-algeria.ipynb
   - caption: Examples
     numbered: True
     chapters:
