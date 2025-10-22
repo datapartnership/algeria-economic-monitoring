@@ -138,7 +138,7 @@ if(!file.exists(OUT_PATH)){
 }
 
 #### NTL Months to Download
-ntl_months <- seq.Date(ymd("2012-01-01"), to = ymd("2025-07-01"), by = "month") %>%
+ntl_months <- seq.Date(ymd("2012-01-01"), to = ymd("2025-09-01"), by = "month") %>%
   as.character()
 
 #### NTL Days to Download
@@ -854,35 +854,68 @@ ntl_gdp_df %>%
 
 # Trends in Nighttime Lights
 
-## Daily, Monthly, Annual
+## ADM0
 ```{r}
-# day_df <- readRDS(file.path(ntl_bm_dir, "aggregated", 
-#                             paste0("ntl_", "adm0", "_", "daily", ".Rds"))) %>%
-#   dplyr::mutate(date = date %>% ymd())
-
-month_df <- readRDS(file.path(ntl_bm_dir, "aggregated", 
-                              paste0("ntl_", "adm0", "_", "monthly", ".Rds"))) %>%
-  dplyr::mutate(date = date %>% ymd())
-
-year_df <- readRDS(file.path(ntl_bm_dir, "aggregated", 
+ntl_df <- readRDS(file.path(ntl_bm_dir, "aggregated", 
                              paste0("ntl_", "adm0", "_", "annual", ".Rds")))
 
-year_df$date <- paste0(year_df$date, "-01-01") %>% ymd()
-
 ggplot() +
-  geom_col(data = year_df,
-           aes(x = date, y = ntl_sum, color = "Annual"),
-           fill = "gray90") +
-  # geom_line(data = day_df,
-  #           aes(x = date, y = ntl_sum, color = "Daily"),
-  #           linewidth = 0.1) +
-  geom_line(data = month_df,
-            aes(x = date, y = ntl_sum, color = "Monthly"),
-            linewidth = 1) +
+  geom_col(data = ntl_df,
+           aes(x = date, y = ntl_sum),
+           fill = wbg_color_dark) +
   labs(x = NULL,
        y = "Nighttime Lights",
        color = NULL) +
   theme_manual
+```
+
+```{r}
+ntl_df <- readRDS(file.path(ntl_bm_dir, "aggregated", 
+                             paste0("ntl_", "adm0", "_", "monthly", ".Rds"))) %>%
+  dplyr::mutate(date = date %>% ymd())
+
+ggplot() +
+  geom_col(data = ntl_df,
+           aes(x = date, y = ntl_sum),
+           fill = wbg_color_dark) +
+  labs(x = NULL,
+       y = "Nighttime Lights",
+       color = NULL) +
+  theme_manual
+```
+
+## ADM1
+```{r}
+ntl_df <- readRDS(file.path(ntl_bm_dir, "aggregated", 
+                             paste0("ntl_", "adm1", "_", "annual", ".Rds")))
+
+ggplot() +
+  geom_col(data = ntl_df,
+           aes(x = date, y = ntl_sum),
+           fill = wbg_color_dark) +
+  labs(x = NULL,
+       y = "Nighttime Lights",
+       color = NULL) +
+  theme_manual +
+  facet_wrap(~NAME_1,
+             scales = "free_y")
+```
+
+```{r}
+ntl_df <- readRDS(file.path(ntl_bm_dir, "aggregated", 
+                             paste0("ntl_", "adm1", "_", "monthly", ".Rds"))) %>%
+  dplyr::mutate(date = date %>% ymd())
+
+ggplot() +
+  geom_col(data = ntl_df,
+           aes(x = date, y = ntl_sum),
+           fill = wbg_color_dark) +
+  labs(x = NULL,
+       y = "Nighttime Lights",
+       color = NULL) +
+  theme_manual +
+  facet_wrap(~NAME_1,
+             scales = "free_y")
 ```
 
 # % Change Maps
