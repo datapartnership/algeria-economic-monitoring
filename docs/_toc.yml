@@ -2,6 +2,13 @@ format: jb-book
 root: README
 
 parts:
+  - caption: Analytics
+    chapters:
+      - file: docs/2-analytics
+      - file: notebooks/linkedin-trends/README
+        sections:
+          - file: notebooks/linkedin-trends/linkedin-labor-analysis.ipynb
+          - file: notebooks/linkedin-trends/linkedin-algeria.ipynb
   - caption: Examples
     numbered: True
     chapters:
@@ -27,4 +34,4 @@ parts:
       - url: https://www.worldbank.org/en/about/unit/unit-dec
         title: World Bank DEC
       - url: https://www.worldbank.org/en/research/dime
-        title: World Bank DIME
+        title: World Bank DIME      
