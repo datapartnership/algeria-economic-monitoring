@@ -9,6 +9,7 @@ parts:
         sections:
           - file: notebooks/linkedin-trends/linkedin-labor-analysis.ipynb
           - file: notebooks/linkedin-trends/linkedin-algeria.ipynb
+          - file: notebooks/linkedin-trends/linkedin-algeria-gender.ipynb
   - caption: Examples
     numbered: True
     chapters:
