@@ -13,6 +13,7 @@ parts:
         sections:
           - file: notebooks/linkedin-trends/linkedin-labor-analysis.ipynb
           - file: notebooks/linkedin-trends/linkedin-algeria.ipynb
+          - file: notebooks/linkedin-trends/linkedin-migration.ipynb
           - file: notebooks/linkedin-trends/linkedin-algeria-gender.ipynb
   - caption: Examples
     numbered: True
@@ -31,6 +32,8 @@ parts:
     chapters:
       - file: docs/gallery
       - file: notebooks/ookla-analysis/ookla-visualization.ipynb
+      - file: notebooks/ookla-analysis/ookla-visualization-fixed.ipynb
+      - file: notebooks/ookla-analysis/ookla-visualization-comparison.ipynb
       - file: notebooks/emissions/airpollution.ipynb
       - file: notebooks/foundational_data/foundational_data.ipynb
   - caption: Additional Resources
