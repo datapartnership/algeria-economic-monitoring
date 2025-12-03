@@ -9,7 +9,7 @@ parts:
     chapters:
       - title: Nighttime Lights
         url: https://raw.githack.com/datapartnership/algeria-economic-monitoring/refs/heads/main/notebooks/nighttime-lights.html
-      - file: notebooks/linkedin-trends/README
+      - file: notebooks/linkedin-trends/README.md
         sections:
           - file: notebooks/linkedin-trends/linkedin-labor-analysis.ipynb
           - file: notebooks/linkedin-trends/linkedin-algeria.ipynb
