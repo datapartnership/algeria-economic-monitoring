@@ -2,7 +2,7 @@
 title: "Algeria Economic Monitoring"
 author: Development Data Group
 logo: docs/images/logo.png
-only_build_toc_files: false
+only_build_toc_files: true
 
 repository:
   url: https://github.com/datapartnership/algeria-economic-monitoring
@@ -46,3 +46,4 @@ sphinx:
       - https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js
     suppress_warnings:
       - "mystnb.unknown_mime_type"
+    html_extra_path: ['docs/extra_html']
