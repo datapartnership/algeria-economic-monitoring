@@ -15,10 +15,17 @@ parts:
           - file: notebooks/linkedin-trends/linkedin-algeria.ipynb
           - file: notebooks/linkedin-trends/linkedin-migration.ipynb
           - file: notebooks/linkedin-trends/linkedin-algeria-gender.ipynb
+      - file: notebooks/small-business-surveys/fob-analysis.ipynb
+        sections:
+          - file: notebooks/small-business-surveys/smes-analysis.ipynb
+          - file: notebooks/small-business-surveys/smes-analysis-2018.ipynb
+          - file: notebooks/small-business-surveys/smes-analysis-2019.ipynb
       - file: notebooks/ookla-analysis/ookla-visualization.ipynb
       - file: notebooks/ookla-analysis/ookla-visualization-fixed.ipynb
       - file: notebooks/ookla-analysis/ookla-visualization-comparison.ipynb
       - file: notebooks/emissions/airpollution.ipynb
+      - file: notebooks/emissions/historic_pollution.ipynb
+      - file: notebooks/emissions/manufacturing_emissions.ipynb
       - file: notebooks/foundational_data/foundational_data.ipynb
   - caption: Additional Resources
     chapters:
