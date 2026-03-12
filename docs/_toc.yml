@@ -25,6 +25,7 @@ parts:
       - file: notebooks/emissions/historic_pollution.ipynb
       - file: notebooks/emissions/manufacturing_emissions.ipynb
       - file: notebooks/foundational_data/foundational_data.ipynb
+      - file: notebooks/air-pollution/no2-gdp-algeria.ipynb
   - caption: Additional Resources
     chapters:
       - file: docs/3-add-resources
