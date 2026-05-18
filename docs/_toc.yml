@@ -21,12 +21,13 @@ parts:
       - file: notebooks/ookla-analysis/ookla-visualization.ipynb
       - file: notebooks/ookla-analysis/ookla-visualization-fixed.ipynb
       - file: notebooks/ookla-analysis/ookla-visualization-comparison.ipynb
-      - file: notebooks/emissions/airpollution.ipynb
-      - file: notebooks/emissions/historic_pollution.ipynb
-      - file: notebooks/emissions/manufacturing_emissions.ipynb
-      - file: notebooks/foundational_data/foundational_data.ipynb
-      - file: notebooks/air-pollution/no2-gdp-algeria.ipynb
+      # - file: notebooks/emissions/airpollution.ipynb
+      # - file: notebooks/emissions/historic_pollution.ipynb
+      # - file: notebooks/emissions/manufacturing_emissions.ipynb
+      # - file: notebooks/foundational_data/foundational_data.ipynb
+      # - file: notebooks/air-pollution/no2-gdp-algeria.ipynb
       - file: notebooks/ai/ai-analysis.ipynb
+      - file: notebooks/ai/software-development.ipynb
   - caption: Additional Resources
     chapters:
       - file: docs/3-add-resources
