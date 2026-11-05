@@ -40,6 +40,9 @@ bibtex_bibfiles:
 # Sphinx settings
 sphinx:
   config:
+    bibtex_reference_style: author_year
+    numfig_format:
+      figure: "Figure %s"
     html_show_copyright: false
     html_last_updated_fmt: "%b %d, %Y"
     html_js_files:
