@@ -28,7 +28,8 @@ parts:
       # - file: notebooks/air-pollution/no2-gdp-algeria.ipynb
       - file: notebooks/ai/ai-analysis.ipynb
       - file: notebooks/ai/software-development.ipynb
-      - file: notebooks/ai/algeria-ai-penetration.ipynb
+      # - file: notebooks/ai/algeria-ai-penetration.ipynb
+      - file: notebooks/ai/ai-box.ipynb
   - caption: Additional Resources
     chapters:
       - file: docs/3-add-resources
