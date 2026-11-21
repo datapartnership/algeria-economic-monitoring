@@ -29,7 +29,7 @@ Within different units of analysis (e.g, administrative units) we use the sum of
 #| message: false
 
 #### MAIN PARAMS
-proj_dir     <- "/Users/rmarty/Library/CloudStorage/OneDrive-SharedLibraries-WBG/Development Data Partnership - Algeria Economic Monitor"
+proj_dir     <- "/Users/rmarty/Library/CloudStorage/OneDrive-WBG/Development Data Partnership - Algeria Economic Monitor"
 iso3_code    <- "DZA"
 iso2_code    <- "DZ"
 pc_base_year <- 2019
@@ -138,7 +138,7 @@ if(!file.exists(OUT_PATH)){
 }
 
 #### NTL Months to Download
-ntl_months <- seq.Date(ymd("2012-01-01"), to = ymd("2025-09-01"), by = "month") %>%
+ntl_months <- seq.Date(ymd("2012-01-01"), to = ymd("2026-10-01"), by = "month") %>%
   as.character()
 
 #### NTL Days to Download
@@ -366,7 +366,7 @@ dir.create(file.path(ntl_bm_dir, "rasters", "monthly_quality"))
 
 r <- bm_raster(roi_sf = roi_sf,
                product_id = "VNP46A4",
-               date = 2012:2024,
+               date = 2012:2025,
                bearer = nasa_bearer,
                output_location_type = "file",
                file_dir = file.path(ntl_bm_dir, "rasters", "annual"))
@@ -407,7 +407,7 @@ for(unit in c("adm0",
                      "monthly")){
     
     if(time_type == "annual"){
-      time_vec <- 2012:2024
+      time_vec <- 2012:2025
     }
     
     if(time_type == "monthly"){
